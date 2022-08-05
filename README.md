@@ -17,9 +17,7 @@
 
 ## Video
 
+![popiApp](https://user-images.githubusercontent.com/109507959/183092045-2479a11f-3a36-45f1-9d41-d2f45518d1f7.gif)
 
-
-
-https://user-images.githubusercontent.com/109507959/183081905-4dd88a0a-9ba2-4bd7-a429-8caddd57d7b9.mp4
 
 
