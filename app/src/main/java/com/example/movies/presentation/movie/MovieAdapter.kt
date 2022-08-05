@@ -18,7 +18,8 @@ class MovieAdapter : RecyclerView.Adapter<ViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = ListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ListItemBinding.inflate(LayoutInflater.from(parent.context), parent,
+                false)
         return ViewHolder(binding)
     }
 
@@ -41,6 +42,7 @@ class ViewHolder(
         binding.tvListItemName.text = movie.title
         binding.tvListItemDescription.text = movie.overview
         val posterURL = "https://image.tmdb.org/t/p/w500" + movie.posterPath
-        Glide.with(binding.ivListItem.context).load(posterURL).placeholder(R.drawable.loading_bg).override(1550,1550).into(binding.ivListItem)
+        Glide.with(binding.ivListItem.context).load(posterURL).placeholder(R.drawable.loading_bg)
+                .override(1550, 1000).into(binding.ivListItem)
     }
 }

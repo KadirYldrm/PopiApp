@@ -41,6 +41,7 @@ class ViewHolder(
         binding.tvListItemName.text = artist.name
         binding.tvListItemDescription.text = artist.popularity.toString()
         val posterURL = "https://image.tmdb.org/t/p/w500" + artist.profilePath
-        Glide.with(binding.ivListItem.context).load(posterURL).placeholder(R.drawable.loading_bg).override(1550,1550).into(binding.ivListItem)
+        Glide.with(binding.ivListItem.context).load(posterURL).placeholder(R.drawable.loading_bg)
+                .override(1550, 1000).into(binding.ivListItem)
     }
 }

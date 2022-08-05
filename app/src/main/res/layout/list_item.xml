@@ -12,9 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
+
         android:clickable="true"
         android:focusable="true"
-        app:cardBackgroundColor="@color/cv_bg_list_item"
+        app:cardBackgroundColor="#D3E0EA"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp">
 
@@ -29,8 +30,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:textColor="@android:color/background_light"
-                android:textSize="30sp"
+                android:textColor="#276678"
+                android:textSize="28sp"
+                android:typeface="serif"
                 android:textStyle="bold"
                 tools:text="TextView" />
 
@@ -45,9 +47,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:textColor="@android:color/background_light"
-                android:textSize="24sp"
                 android:textStyle="bold"
+                android:textColor="#276678"
+                android:textSize="20sp"
                 tools:text="TextView" />
 
         </LinearLayout>
