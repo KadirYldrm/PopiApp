@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bnMovieItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_movie"
+        android:title="Movies"/>
+    <item
+        android:id="@+id/bnTvShowItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_tvshow"
+        android:title="TvShows"/>
+    <item
+        android:id="@+id/bnArtistItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_artist"
+        android:title="Artists"/>
+</menu>
