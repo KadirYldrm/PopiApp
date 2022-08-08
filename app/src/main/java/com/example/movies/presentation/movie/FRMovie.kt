@@ -18,8 +18,8 @@ class FRMovie : Fragment(R.layout.fr_movie) {
 
 
     @Inject
-    lateinit var factory:MovieVMFactory
-    private lateinit var movieViewModel:MovieVM
+    lateinit var factory: MovieVMFactory
+    private lateinit var movieViewModel: MovieVM
     private lateinit var adapter: MovieAdapter
     private lateinit var binding: FrMovieBinding
 
@@ -27,7 +27,7 @@ class FRMovie : Fragment(R.layout.fr_movie) {
     override fun onAttach(context: Context) {
         super.onAttach(context)
         (activity?.application as Injector).createMovieSubComponent().inject(this)
-        movieViewModel=ViewModelProvider(this,factory).get(MovieVM::class.java)
+        movieViewModel = ViewModelProvider(this, factory).get(MovieVM::class.java)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -43,10 +43,11 @@ class FRMovie : Fragment(R.layout.fr_movie) {
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_update,menu)
+        inflater.inflate(R.menu.menu_update, menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
         return when (item.itemId) {
             R.id.action_update -> {
                 updateMovies()
@@ -57,6 +58,7 @@ class FRMovie : Fragment(R.layout.fr_movie) {
     }
 
     private fun initRecyclerView() {
+
         with(binding) {
             rvMovie.layoutManager = LinearLayoutManager(context)
             adapter = MovieAdapter()

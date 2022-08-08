@@ -24,11 +24,11 @@ class ACMain : AppCompatActivity() {
         loadFragment(FRMovie())
 
         binding.bottomNavigation.setOnItemSelectedListener {
-            when(it.itemId){
-                R.id.bnMovieItem->loadFragment(FRMovie())
-                R.id.bnArtistItem->loadFragment(FRArtist())
-                R.id.bnTvShowItem->loadFragment(FRTvShow())
-                else->{
+            when (it.itemId) {
+                R.id.bnMovieItem -> loadFragment(FRMovie())
+                R.id.bnArtistItem -> loadFragment(FRArtist())
+                R.id.bnTvShowItem -> loadFragment(FRTvShow())
+                else -> {
 
                 }
             }

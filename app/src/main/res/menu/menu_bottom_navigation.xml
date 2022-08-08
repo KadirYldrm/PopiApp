@@ -3,15 +3,15 @@
         android:id="@+id/bnMovieItem"
         android:enabled="true"
         android:icon="@drawable/ic_movie"
-        android:title="Movies"/>
+        android:title="Movies" />
     <item
         android:id="@+id/bnTvShowItem"
         android:enabled="true"
         android:icon="@drawable/ic_tvshow"
-        android:title="TvShows"/>
+        android:title="TvShows" />
     <item
         android:id="@+id/bnArtistItem"
         android:enabled="true"
         android:icon="@drawable/ic_artist"
-        android:title="Artists"/>
+        android:title="Artists" />
 </menu>

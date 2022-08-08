@@ -4,7 +4,6 @@ import android.content.Context
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -12,7 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.movies.R
 import com.example.movies.databinding.FrArtistBinding
 import com.example.movies.presentation.di.Injector
-import com.example.movies.presentation.movie.MovieVM
 import javax.inject.Inject
 
 class FRArtist : Fragment(R.layout.fr_artist) {
@@ -42,6 +40,7 @@ class FRArtist : Fragment(R.layout.fr_artist) {
     }
 
     private fun initRecyclerView() {
+
         with(binding) {
             rvArtist.layoutManager = LinearLayoutManager(context)
             adapter = ArtistAdapter()

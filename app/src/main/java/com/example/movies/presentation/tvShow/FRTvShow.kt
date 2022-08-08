@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.movies.R
 import com.example.movies.databinding.FrTvShowBinding
 import com.example.movies.presentation.di.Injector
-import com.example.movies.presentation.movie.MovieVM
 import javax.inject.Inject
 
 class FRTvShow : Fragment(R.layout.fr_tv_show) {
@@ -41,6 +40,7 @@ class FRTvShow : Fragment(R.layout.fr_tv_show) {
     }
 
     private fun initRecyclerView() {
+
         with(binding) {
             rvTvShow.layoutManager = LinearLayoutManager(context)
             adapter = TvShowAdapter()
@@ -70,6 +70,7 @@ class FRTvShow : Fragment(R.layout.fr_tv_show) {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
         return when (item.itemId) {
             R.id.action_update -> {
                 updateMovies()
